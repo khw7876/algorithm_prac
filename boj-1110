@@ -1,0 +1,12 @@
+A = int(input())
+num = 0
+count = 0
+while True:
+    a = A - (A%10)
+    b = A - a
+    num = b*10 + (a+b)%10
+    count += 1
+    
+    if(num == A):
+        break
+print(count)
