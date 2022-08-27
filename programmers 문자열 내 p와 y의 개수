@@ -1,0 +1,9 @@
+def solution(s):
+    p = 0
+    y = 0
+    for a in s:
+        if a == "P" or a == "p":
+            p += 1
+        elif a == "y" or a == "Y":
+            y +=1
+    return p == y
