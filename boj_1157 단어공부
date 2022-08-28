@@ -1,0 +1,16 @@
+words = input().upper()
+unique_words = list(set(words))
+
+alphabet = [0 for _ in range(26)]
+for W in words:
+    alphabet[ord(W)-65] += 1
+
+max_num = max(alphabet)
+max_num_count= 0
+for A in alphabet:
+    if A == max_num:
+        max_num_count += 1
+if max_num_count ==1:
+    print(chr(alphabet.index(max_num)+65))
+else :
+    print("?")
