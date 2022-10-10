@@ -1,0 +1,4 @@
+def solution(arr1, arr2):
+    answer=[[(arr1[a][i] + arr2[a][i]) for i in range(len(arr1[a]))] for a in range(len(arr1))]
+
+    return answer
