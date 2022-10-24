@@ -1,0 +1,15 @@
+def solution(s, n):
+    low = "abcdefghijklmnopqrstuvwxyz" # 0부터 25
+    up = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" # 대문자, 0에서 25
+    input = ''.join(list(s))
+    answer = ""
+    for str in input:
+        if str in low:
+            index = low.find(str)+n
+            answer += low[index%26]
+        elif str in up:
+            index = up.find(str)+n
+            answer += up[index%26]
+        else :
+            answer +=" "
+    return answer
