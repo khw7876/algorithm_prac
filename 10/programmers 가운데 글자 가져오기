@@ -1,0 +1,8 @@
+import math
+def solution(s):
+    length = len(s)
+    if length %2 == 0:
+        answer = s[math.ceil(length/2)-1] + s[math.floor(length/2)]
+    else: 
+        answer = s[math.floor(length/2)]
+    return answer
