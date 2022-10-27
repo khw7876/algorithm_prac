@@ -1,0 +1,5 @@
+def solution(numbers):
+    max_index_num = numbers.pop(numbers.index(max(numbers)))
+    second_max = max(numbers)
+    answer = max_index_num * second_max
+    return answer
