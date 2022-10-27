@@ -1,0 +1,7 @@
+def solution(hp):
+    A = hp / 5
+    A_left = hp % 5
+    B = A_left / 3
+    B_left = A_left % 3
+    answer = int(A) + int(B) + B_left
+    return answer
