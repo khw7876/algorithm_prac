@@ -1,0 +1,8 @@
+def solution(n, k):
+    yang = n * 12000
+    
+    if n >= 10:
+        k -= int(n / 10)
+    drink = k * 2000
+    answer = yang + drink
+    return answer
