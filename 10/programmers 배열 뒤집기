@@ -1,0 +1,9 @@
+def solution(num_list):
+    answer = []
+    for i in range(1, len(num_list) + 1):
+        answer.append(i)
+    for index, i in enumerate(num_list):
+        answer[-index -1] = i
+        
+    
+    return answer
