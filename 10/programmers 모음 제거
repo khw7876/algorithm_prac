@@ -1,0 +1,9 @@
+def solution(my_string):
+    vowels = 'aeiou'
+    # answer = ''
+    # for i in my_string:
+    #     if i not in vowels:
+    #         answer += i
+    for vowel in vowels:
+        my_string = my_string.replace(vowel, "")
+    return my_string
