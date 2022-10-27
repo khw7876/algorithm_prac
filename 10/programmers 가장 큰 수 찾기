@@ -1,0 +1,9 @@
+def solution(array):
+    answer = [0,0]
+    for index, i in enumerate(array):
+        if i > answer[0]:
+            answer[0] = i
+            answer[1] = index
+            
+    
+    return answer
