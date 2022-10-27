@@ -1,0 +1,8 @@
+def solution(n):
+    a = map(int,list(str(n)))
+    print(a[0])
+    n = list(str(n))
+    answer = 0
+    for i in n:
+        answer += int(i)    
+    return answer
