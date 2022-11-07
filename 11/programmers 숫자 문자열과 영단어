@@ -1,0 +1,6 @@
+def solution(s):
+    answer = []
+    number_list = ["zero", "one", "two", "three", "four", "five", "six", "seven", 'eight', "nine"]
+    for i in number_list:
+        s = s.replace(str(i), str(number_list.index(i)))
+    return int(s)
