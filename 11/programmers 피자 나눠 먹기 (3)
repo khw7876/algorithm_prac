@@ -1,0 +1,9 @@
+def solution(slice, n):
+    answer = 1
+    x = False
+    while x == False:
+        if answer * slice >= n :
+            x = True
+        else :
+            answer += 1
+    return answer
