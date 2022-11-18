@@ -1,0 +1,10 @@
+def solution(n):
+    answer = 1
+    x = False
+    while x == False:
+        if answer * 6 % n == 0:
+            x = True
+        else:
+            answer += 1
+        
+    return answer
