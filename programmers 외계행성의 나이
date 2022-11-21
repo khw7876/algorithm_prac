@@ -1,0 +1,12 @@
+import string
+
+def solution(age):
+    answer = ''
+    
+    age_list = list(string.ascii_lowercase)
+    
+    for i in str(age):
+        answer += answer.join(age_list[int(i)])
+    
+    
+    return answer
