@@ -1,0 +1,14 @@
+def solution(balls, share):
+    n_fac = 1
+    n_m_fac = 1
+    m_fac = 1
+    for i in range(1, balls + 1):
+        n_fac = n_fac * i
+        
+    for i in range(1, balls +1 - share):
+        n_m_fac = n_m_fac * i
+    
+    for i in range(1, share+1):
+        m_fac = m_fac * i
+    
+    return n_fac / (n_m_fac * m_fac)
