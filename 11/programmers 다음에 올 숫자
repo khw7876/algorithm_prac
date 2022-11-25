@@ -1,0 +1,10 @@
+def solution(common):
+    answer = 0
+    first = common[1] - common[0]
+    second = common[2] - common[1]
+    
+    if first == second:
+        answer = common[-1] + first
+    else :
+        answer = common[-1] * (second // first)
+    return answer
