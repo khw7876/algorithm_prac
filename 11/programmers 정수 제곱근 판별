@@ -1,0 +1,16 @@
+
+function solution(n) {
+    var answer = 0;
+    for (i = 0; n >= i*i; i++){
+        if(i**2 == n){
+            answer = i
+        }
+    }
+    if (answer){
+        answer = (answer +1)**2
+    }
+    else {
+        answer = -1
+    }
+    return answer;
+}
