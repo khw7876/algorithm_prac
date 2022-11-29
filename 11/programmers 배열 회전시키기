@@ -1,0 +1,17 @@
+def solution(numbers, direction):
+    answer = [0] * len(numbers)
+    if direction == "right":
+        for index, i in enumerate(numbers):
+            if index == len(numbers) -1:
+                answer[0] = i
+            else:
+                answer[index + 1] = i
+    else:
+        for index, i in enumerate(numbers):
+            if index == 0:
+                answer[-1] = i
+            else:
+                answer[index -1] = i
+                
+            
+    return answer
