@@ -4,3 +4,15 @@ def solution(n):
     else:
         answer = int(n/7) + 1
     return answer
+
+
+function solution(n) {
+    var answer = 0;
+    if(n % 7 == 0){
+        answer = parseInt(n/7);
+    }
+    else{
+        answer = parseInt(n/7) + 1;
+    }
+    return answer;
+}
