@@ -1,0 +1,9 @@
+def solution(my_string):
+    answer = ''
+    string = []
+    for i in my_string:
+        if i in string:
+            pass
+        else:
+            string.append(i)
+    return "".join(string)
